@@ -1,0 +1,68 @@
+/nbproject/private/
+
+# =========================
+# WordPress Core
+# =========================
+/wp-admin/
+/wp-includes/
+/license.txt
+/readme.html
+/wp-*.php
+
+# =========================
+# Archivos sensibles
+# =========================
+wp-config.php
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+
+# =========================
+# Logs & temporales
+# =========================
+*.log
+*.sql
+*.tar.gz
+*.zip
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# =========================
+# Plugins y Themes
+# (ignorar todos excepto los que desarrolles)
+# =========================
+/wp-content/plugins/*
+!/wp-content/plugins/mi-plugin-personal/
+/wp-content/themes/*
+!/wp-content/themes/mi-tema-personal/
+
+# =========================
+# Uploads
+# =========================
+/wp-content/uploads/
+
+# =========================
+# Cache
+# =========================
+/wp-content/cache/
+cache/
+*.cache
+
+# =========================
+# Node / Composer
+# =========================
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+
+# =========================
+# IDE / Sistema
+# =========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
