@@ -34,10 +34,8 @@ Thumbs.db
 # Plugins y Themes
 # (ignorar todos excepto los que desarrolles)
 # =========================
-/wp-content/plugins/*
-!/wp-content/plugins/mi-plugin-personal/
 /wp-content/themes/*
-!/wp-content/themes/mi-tema-personal/
+!/wp-content/themes/blocksy/
 
 # =========================
 # Uploads
