@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-12 16:41:11+0000\n"
+"PO-Revision-Date: 2025-08-20 23:13:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,30 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+
+#: src/Internal/Admin/Settings/PaymentsRestController.php:933
+msgid "The URL to POST to for resetting the provider onboarding."
+msgstr "La URL para PUBLICAR con la que restablecer la puesta en marcha del proveedor."
+
+#: src/Internal/Admin/Settings/PaymentsRestController.php:927
+msgid "The link to reset the provider state/account and restart the onboarding."
+msgstr "El enlace para restablecer el estado/cuenta del proveedor y restablecer la puesta en marcha."
+
+#: src/Internal/Admin/Settings/PaymentsRestController.php:919
+msgid "The URL to POST to disable the test account for the payment gateway."
+msgstr "La URL para PUBLICAR con la que desactivar la cuenta de pruebas de la pasarela de pagos."
+
+#: src/Internal/Admin/Settings/PaymentsRestController.php:913
+msgid "The link to disable the test account for the payment gateway."
+msgstr "El enlace con el que desactivar la cuenta de pruebas de la pasarela de pagos."
+
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1187
+msgid "Action to disable the test account currently in use"
+msgstr "Acción para desactivar la cuenta de pruebas actualmente en uso"
+
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1180
+msgid "Action to reset the onboarding process, either partially, for a certain step, or fully."
+msgstr "Acción para restablecer el proceso de puesta en marcha, o parcialmente, o en un paso concreto, o por completo."
 
 #: assets/client/blocks/single-product/block.json
 msgctxt "block keyword"
@@ -1565,135 +1589,130 @@ msgstr "El ID del proveedor debe ser una cadena con únicamente letras ASCII, d�
 msgid "If true, the incentive dismissal will be ignored by tracking."
 msgstr "Si es verdadero, el rechazo del incentivo será ignorado por el seguimiento."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1650
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1702
 #: assets/client/admin/chunks/5306.js:1
 msgid "There are environment or store setup issues which are blocking progress. Please resolve them to proceed."
 msgstr "Hay problemas en el entorno o en la configuración de la tienda que están bloqueando el progreso. Por favor, resuélvelos antes de proceder."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1162
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1298
-msgid "A live account is set up. Reset the onboarding first."
-msgstr "Se ha configurado una cuenta real. Reinicia primero la puesta en marcha."
-
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1000
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1137
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1259
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1009
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1146
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1261
 msgid "Received an unexpected response from the platform."
 msgstr "Se recibió una respuesta inesperada desde la plataforma."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:2408
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:2541
 msgid "Failed to get onboarding fields data."
 msgstr "Error al obtener los datos de los campos de incorporación."
 
 #. translators: %s: The invalid step ID.
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1918
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1992
 msgid "The onboarding step ID is invalid: %s"
 msgstr "El ID del paso de incorporación no es válido: %s"
 
 #. translators: %s: The required key that is missing.
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1913
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1987
 msgid "The onboarding step is missing required entries: %s"
 msgstr "En el paso de incorporación faltan las entradas obligatorias: %s"
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1643
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1695
 msgid "Onboarding step requirements are not met."
 msgstr "No se cumplen los requisitos del paso de incorporación."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1322
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1611
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1315
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1663
 msgid "Another onboarding action is already in progress. Please wait for it to finish."
 msgstr "Ya hay otra acción de incorporación en curso. Espera a que termine."
 
 #. translators: %s: WooPayments.
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1602
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1654
 msgid "The %s extension is not up-to-date. Please update to the latest version and try again."
 msgstr "La extensión %s no está actualizada. Actualízala a la última versión y vuelve a intentarlo."
 
 #. translators: %s: WooPayments.
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1591
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1643
 msgid "The %s extension is not active."
 msgstr "La extensión %s no está activa."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1511
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1556
 msgid "Failed to disable the test account."
 msgstr "No se ha podido desactivar la cuenta de prueba."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1476
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1491
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1515
 msgid "An unexpected error happened while disabling the test account."
 msgstr "Se ha producido un error inesperado al desactivar la cuenta de prueba."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1419
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1428
 msgid "Failed to reset onboarding."
 msgstr "No se ha podido restablecer la incorporación."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1395
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1390
 msgid "An unexpected error happened while resetting onboarding."
 msgstr "Se ha producido un error inesperado al restablecer la incorporación."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1268
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1270
 msgid "Failed to finish the KYC session."
 msgstr "No se ha podido finalizar la sesión de KYC."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1220
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1222
 msgid "An unexpected error happened while finalizing the KYC session."
 msgstr "Se ha producido un error inesperado al finalizar la sesión de KYC."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1146
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1155
 msgid "Failed to get the KYC session data."
 msgstr "No se han podido obtener los datos de la sesión de KYC."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1098
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1107
 msgid "An unexpected error happened while creating the KYC session."
 msgstr "Se ha producido un error inesperado al crear la sesión de KYC."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1009
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1018
 msgid "Failed to initialize the test account."
 msgstr "No se ha podido inicializar la cuenta de prueba."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:961
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:970
 msgid "An unexpected error happened while initializing the test account."
 msgstr "Se ha producido un error inesperado al inicializar la cuenta de prueba."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:920
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:926
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:935
 msgid "An account is already set up. Reset the onboarding first."
 msgstr "Ya se ha configurado una cuenta. Primero restablece la incorporación."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:907
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:923
 msgid "A test account is already set up."
 msgstr "Ya se ha configurado una cuenta de prueba."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:800
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:816
 msgid "Save action not supported for the onboarding step ID."
 msgstr "La acción de guardar no es compatible con el ID del paso de incorporación."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:772
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:788
 msgid "Invalid onboarding step data."
 msgstr "Datos del paso de incorporación no válidos."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:201
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:492
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1636
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:207
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:508
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsService.php:1688
 msgid "Invalid onboarding step ID."
 msgstr "ID del paso de incorporación no válido."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1133
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1230
 msgid "The URL to use for the action."
 msgstr "La URL que se utilizará para la acción."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1126
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1223
 msgid "The action type to determine how to use the URL."
 msgstr "El tipo de acción para determinar cómo usar la URL."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1108
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1205
 msgid "Various contextual data for the onboarding process to use."
 msgstr "Varios datos contextuales que se usarán en el proceso de incorporación."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1099
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1196
 msgid "Various contextual data for the step to use."
 msgstr "Varios datos contextuales que se usarán en el paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1090
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1173
 msgid "Action to use as a fallback when dealing with errors with the embedded KYC."
 msgstr "Acción que se usará como alternativa al producirse errores con el KYC incrustado."
 
@@ -1706,84 +1725,85 @@ msgstr "Prueba las nuevas plantillas"
 msgid "We’ve made some exciting improvements to our email templates, including modern, shopper-friendly designs and new customization options. And if you’re using a block theme, you can automatically sync your theme styles! Head to your email settings to explore the new features."
 msgstr "Hemos realizado algunas mejoras interesantes en nuestras plantillas de correo electrónico, incluidos diseños modernos y fáciles de usar para los compradores y nuevas opciones de personalización. Y si utilizas un tema de bloques puedes sincronizar automáticamente los estilos de tus temas. Ve a tus ajustes de correo electrónico para explorar las nuevas características."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1055
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1138
 msgid "Action to clean the step progress."
 msgstr "Acción para limpiar el progreso del paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1083
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1166
 msgid "Action to finish an embedded KYC session."
 msgstr "Acción para finalizar una sesión de KYC incrustada."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1076
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1159
 msgid "Action to create or resume an embedded KYC session."
 msgstr "Acción para crear o reanudar una sesión de KYC incrustada."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1069
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1152
 msgid "Action to initialize a test account."
 msgstr "Acción para inicializar una cuenta de prueba."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1062
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1145
 msgid "Action to authorize the WPCOM connection."
 msgstr "Acción para autorizar la conexión WPCOM."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1048
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1131
 msgid "Action to signal the step completion."
 msgstr "Acción para indicar la finalización del paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1041
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1124
 msgid "Action to check the step status."
 msgstr "Acción para comprobar el estado del paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1034
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1117
 msgid "Action to save step information in the database."
 msgstr "Acción para guardar la información del paso en la base de datos."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1027
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1110
 msgid "Action to signal the step start."
 msgstr "Acción para indicar el inicio del paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1021
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1104
 msgid "The available actions for the step."
 msgstr "Las acciones disponibles para el paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1012
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1095
 msgid "Errors list for the step."
 msgstr "Lista de errores del paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1001
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1084
 msgid "The current status of the step."
 msgstr "El estado actual del paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:992
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1075
 msgid "The steps that are required to be completed before this step."
 msgstr "Los pasos que deben completarse antes de este paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:986
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1069
 msgid "The relative path of the step to use for frontend navigation."
 msgstr "La ruta relativa del paso que se usará en la navegación frontend."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:980
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1063
 msgid "The unique identifier for the step."
 msgstr "El identificador único del paso."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:972
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1055
 msgid "The onboarding steps."
 msgstr "Los pasos de incorporación."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:964
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1047
 msgid "Whether WooPayments is in dev mode."
 msgstr "Si WooPayments está en modo de desarrollo."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:958
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1041
 msgid "Whether the onboarding process is in test mode."
 msgstr "Si el proceso de incorporación está en modo de prueba."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:940
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1023
 msgid "The general state of the onboarding process."
 msgstr "El estado general del proceso de incorporación."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:333
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:379
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:337
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:393
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:439
 msgid "Where from in the onboarding flow this request was triggered."
 msgstr "Desde qué punto del flujo de incorporación se ha activado esta solicitud."
 
@@ -1793,8 +1813,10 @@ msgstr "Desde qué punto del flujo de incorporación se ha activado esta solicit
 #: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:229
 #: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:256
 #: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:283
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:339
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:385
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:310
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:343
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:399
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:445
 msgid "The upmost entry point from where the merchant entered the onboarding flow."
 msgstr "El punto de entrada más avanzado desde el que el vendedor entró en el flujo de incorporación."
 
@@ -1818,9 +1840,11 @@ msgstr "Punto de venta"
 #: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:222
 #: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:249
 #: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:276
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:304
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:326
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:372
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:303
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:330
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:364
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:386
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:432
 msgid "ISO3166 alpha-2 country code. Defaults to the stored providers business location country code."
 msgstr "Código de país ISO3166 alpha-2. Por defecto, es el código de país de la ubicación de la empresa de los proveedores guardados."
 
@@ -2174,11 +2198,11 @@ msgstr "A la respuesta de la API le faltan elementos obligatorios, o están en u
 msgid "We couldn't find a preview for this product."
 msgstr "No hemos encontrado ninguna vista previa para este producto."
 
-#: includes/admin/class-wc-admin.php:332
+#: includes/admin/class-wc-admin.php:298
 msgid "There was an error rendering the email preview."
 msgstr "Se ha producido un error al renderizar la vista previa del correo electrónico."
 
-#: includes/admin/class-wc-admin.php:285
+#: includes/admin/class-wc-admin.php:251
 msgid "There was an error rendering the email preview. This doesn't affect actual email delivery. Please contact the extension author for assistance."
 msgstr "Se ha producido un error al renderizar la vista previa del correo electrónico. Esto no afecta a la entrega del correo electrónico. Ponte en contacto con el autor de la extensión para obtener ayuda."
 
@@ -2191,11 +2215,11 @@ msgstr "Cargando datos de estado..."
 msgid "Export %d selected"
 msgstr "Exportar %d seleccionados"
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1268
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1296
 msgid "Unix timestamp representing when the incentive was dismissed."
 msgstr "La marca temporal de Unix que representa cuándo se descartó el incentivo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1254
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1282
 msgid "The dismissals list for the incentive. Each dismissal entry includes a context and a timestamp. The `all` entry means the incentive was dismissed for all contexts."
 msgstr "La lista de descartes del incentivo. Cada registro de descarte incluye un contexto y una marca temporal. El registro `todos` significa que el incentivo se descartó en todos los contextos."
 
@@ -2823,17 +2847,17 @@ msgstr "Acepta todos los métodos de pago habituales para clientes finlandeses B
 msgid "Paytrail"
 msgstr "Paytrail"
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1003
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1166
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1031
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1194
 msgid "The URL to attach the suggestion."
 msgstr "La URL para adjuntar la sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:997
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1160
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1025
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1188
 msgid "The link to mark the suggestion as attached. This should be called when an extension is installed."
 msgstr "El enlace para marcar la sugerencia como adjunta. Debe ser llamado cuando se instala una extensión."
 
-#: src/Internal/Admin/Settings/PaymentsProviders.php:803
+#: src/Internal/Admin/Settings/PaymentsProviders.php:805
 msgid "Wallets & Express checkouts"
 msgstr "Carteras y pagos rápidos"
 
@@ -3406,16 +3430,16 @@ msgctxt "block description"
 msgid "Allow customers to create an account after their purchase."
 msgstr "Permite que los clientes creen una cuenta después de hacer una compra."
 
-#: src/Admin/Features/OnboardingTasks/Tasks/Payments.php:127
+#: src/Admin/Features/OnboardingTasks/Tasks/Payments.php:137
 #: assets/client/admin/chunks/settings-payments-main.js:1
 msgid "Test account"
 msgstr "Probar la cuenta"
 
-#: src/Internal/Admin/Settings/PaymentsProviders.php:816
+#: src/Internal/Admin/Settings/PaymentsProviders.php:818
 msgid "Offer cryptocurrency payment options to your shoppers."
 msgstr "Ofrece opciones de pago con criptomonedas a tus compradores."
 
-#: src/Internal/Admin/Settings/PaymentsProviders.php:815
+#: src/Internal/Admin/Settings/PaymentsProviders.php:817
 msgid "Crypto Payments"
 msgstr "Pagos con criptomonedas"
 
@@ -3653,6 +3677,11 @@ msgstr "Muestra un campo de entrada que los clientes pueden usar para selecciona
 msgid "Products in cart"
 msgstr "Productos del carrito"
 
+#: src/Admin/Features/OnboardingTasks/Tasks/Payments.php:134
+#: assets/client/admin/chunks/settings-payments-main.js:1
+msgid "Action needed"
+msgstr "Acción necesaria"
+
 #: includes/admin/settings/class-wc-settings-emails.php:797
 #: assets/client/admin/wp-admin-scripts/settings-embed.js:2
 msgid "Sync with theme"
@@ -3793,160 +3822,160 @@ msgstr "Tu partner de pagos de confianza en Asia y en todo el mundo."
 msgid "Antom"
 msgstr "Antom"
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1149
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1177
 msgid "The category of the suggestion."
 msgstr "La categoría de la sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1136
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1143
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1164
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1171
 msgid "The tags associated with the suggestion."
 msgstr "Las etiquetas asociadas a la sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1109
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1137
 msgid "The URL of the icon (square aspect ratio)."
 msgstr "La URL del icono (relación de aspecto cuadrada)"
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1104
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1132
 msgid "The URL of the image."
 msgstr "La URL de la imagen."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1067
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1095
 msgid "The description of the suggestion."
 msgstr "La descripción de la sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1061
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1089
 msgid "The title of the suggestion."
 msgstr "El título de la sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1055
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1083
 msgid "The type of the suggestion."
 msgstr "El tipo de sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1049
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1077
 msgid "The priority of the suggestion."
 msgstr "La prioridad de la sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1043
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1071
 msgid "The unique identifier for the suggestion."
 msgstr "El identificador único de la sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1037
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1065
 msgid "A suggestion with full details."
 msgstr "Una sugerencia con todos los detalles."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1017
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1180
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1045
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1208
 msgid "The URL to hide the suggestion."
 msgstr "La URL para ocultar la sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1011
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1174
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1039
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1202
 msgid "The link to hide the suggestion."
 msgstr "El enlace para ocultar la sugerencia."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1287
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1315
 msgid "The URL to dismiss the incentive."
 msgstr "La URL para excluir el incentivo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1281
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1309
 msgid "The link to dismiss the incentive."
 msgstr "La URL para excluir del incentivo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1263
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1291
 msgid "Context ID in which the incentive was dismissed."
 msgstr "El enlace para excluir el incentivo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1248
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1276
 msgid "The badge label for the incentive."
 msgstr "La etiqueta identificativa del incentivo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1242
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1270
 msgid "The URL to the terms and conditions for the incentive."
 msgstr "La URL de los términos y condiciones del incentivo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1236
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1264
 msgid "The call to action label for the incentive."
 msgstr "La etiqueta de llamada a la acción del incentivo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1230
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1258
 msgid "The short description of the incentive. It can contain stylistic HTML."
 msgstr "La descripción breve del incentivo. Puede contener HTML de estilo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1224
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1252
 msgid "The incentive description. It can contain stylistic HTML."
 msgstr "La descripción del incentivo. Puede contener HTML de estilo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1218
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1246
 msgid "The incentive title. It can contain stylistic HTML."
 msgstr "El título del incentivo. Puede contener HTML de estilo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1212
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1240
 msgid "The incentive promo ID. This ID need to be fed into the onboarding flow."
 msgstr "El ID de promoción del incentivo. Esta identificación debe incluirse en el flujo de la integración."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1206
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1234
 msgid "The incentive unique ID. This ID needs to be used for incentive dismissals."
 msgstr "El ID único del incentivo. Este ID debe utilizarse para las exclusiones del incentivo."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1200
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1228
 msgid "The active incentive for the provider."
 msgstr "El incentivo activo del proveedor."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:985
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1013
 msgid "The suggestion ID matching this provider."
 msgstr "El ID de sugerencia que corresponde a este proveedor."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:979
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1007
 msgid "Tag associated with the provider."
 msgstr "Etiqueta asociada al proveedor."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:973
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1001
 msgid "The tags associated with the provider."
 msgstr "Las etiquetas asociadas al proveedor."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:962
+#: src/Internal/Admin/Settings/PaymentsRestController.php:990
 msgid "The URL of the payment method icon or a base64-encoded SVG image."
 msgstr "La URL del icono del método de pago o una imagen SVG con codificación base64."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:956
+#: src/Internal/Admin/Settings/PaymentsRestController.php:984
 msgid "The description of the payment method. It can contain basic HTML."
 msgstr "La descripción del método de pago. Puede contener HTML básico."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:950
+#: src/Internal/Admin/Settings/PaymentsRestController.php:978
 msgid "The title of the payment method. Does not include HTML tags."
 msgstr "El título del método de pago. No incluye etiquetas HTML."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:932
+#: src/Internal/Admin/Settings/PaymentsRestController.php:960
 msgid "The sort order of the payment method."
 msgstr "El orden de clasificación del método de pago."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:926
+#: src/Internal/Admin/Settings/PaymentsRestController.php:954
 msgid "The unique identifier for the payment method."
 msgstr "El identificador único del método de pago."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:920
+#: src/Internal/Admin/Settings/PaymentsRestController.php:948
 msgid "The details for a recommended payment method."
 msgstr "Los detalles de un método de pago recomendado."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:915
+#: src/Internal/Admin/Settings/PaymentsRestController.php:943
 msgid "The list of recommended payment methods details for the payment gateway."
 msgstr "La lista de detalles de los métodos de pago recomendados para la pasarela de pago."
 
 #: src/Internal/Admin/Settings/PaymentsRestController.php:905
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1301
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1329
 msgid "The URL to start/continue onboarding for the payment gateway."
 msgstr "La URL para iniciar/continuar la integración con la pasarela de pago."
 
 #: src/Internal/Admin/Settings/PaymentsRestController.php:899
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1295
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1323
 msgid "The start/continue onboarding link for the payment gateway."
 msgstr "El enlace de integración de inicio/continuación de la pasarela de pago."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:952
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1035
 msgid "Whether the onboarding process is completed."
 msgstr "Si se ha completado el proceso de puesta en marcha."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:946
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:1029
 msgid "Whether the onboarding process is started."
 msgstr "Si se ha iniciado el proceso de puesta en marcha."
 
@@ -3991,12 +4020,12 @@ msgid "The general state of the provider with regards to it's payments processin
 msgstr "El estado general del proveedor en cuanto a su procesamiento de pagos."
 
 #: src/Internal/Admin/Settings/PaymentsRestController.php:793
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1127
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1155
 msgid "The URL of the link."
 msgstr "La URL del enlace."
 
 #: src/Internal/Admin/Settings/PaymentsRestController.php:787
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1121
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1149
 msgid "The type of the link."
 msgstr "El tipo de enlace."
 
@@ -4012,7 +4041,7 @@ msgstr "La URL del icono del proveedor (relación de aspecto cuadrada: 72 px po
 msgid "The URL of the provider image."
 msgstr "La URL de la imagen del proveedor."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1096
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1124
 msgid "The status of the plugin."
 msgstr "El estado del plugin."
 
@@ -4020,11 +4049,11 @@ msgstr "El estado del plugin."
 msgid "The plugin main file. This is a relative path to the plugins directory."
 msgstr "El archivo principal del plugin. Es una ruta relativa al directorio de plugins."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:944
+#: src/Internal/Admin/Settings/PaymentsRestController.php:972
 msgid "Whether the payment method should be required (and force-enabled) or not."
 msgstr "Si el método de pago debe ser obligatorio (y activarse forzosamente) o no."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:938
+#: src/Internal/Admin/Settings/PaymentsRestController.php:966
 msgid "Whether the payment method should be recommended as enabled or not."
 msgstr "Si el método de pago debe recomendarse como activado o no."
 
@@ -4032,11 +4061,11 @@ msgstr "Si el método de pago debe recomendarse como activado o no."
 msgid "Whether the provider is enabled for use on checkout."
 msgstr "Si el proveedor está activo para usarse en el pago."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1085
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1113
 msgid "The slug of the plugin."
 msgstr "El slug del plugin."
 
-#: src/Internal/Admin/Settings/PaymentsRestController.php:1079
+#: src/Internal/Admin/Settings/PaymentsRestController.php:1107
 msgid "The type of the plugin."
 msgstr "El tipo de plugin."
 
@@ -4116,12 +4145,12 @@ msgstr "El argumento de ordenación debe ser un objeto con ID de proveedor como 
 msgid "The ordering argument must be an object."
 msgstr "El argumento de ordenación debe ser un objeto."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:869
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:952
 #: src/Internal/Admin/Settings/PaymentsRestController.php:396
 msgid "The location argument must be a valid ISO3166 alpha-2 country code."
 msgstr "El argumento de ubicación debe ser un código de país ISO3166 alpha-2 válido."
 
-#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:858
+#: src/Internal/Admin/Settings/PaymentsProviders/WooPayments/WooPaymentsRestController.php:941
 #: src/Internal/Admin/Settings/PaymentsRestController.php:385
 msgid "The location argument must be a string."
 msgstr "El argumento de ubicación debe ser una cadena."
@@ -4155,28 +4184,28 @@ msgstr "El valor del pedido debe ser un número entero."
 msgid "Take offline payments"
 msgstr "Acepta pagos sin conexión"
 
-#: src/Internal/Admin/Settings/PaymentsProviders.php:822
+#: src/Internal/Admin/Settings/PaymentsProviders.php:824
 msgid "Give your shoppers additional ways to pay."
 msgstr "Ofrece a tus compradores opciones adicionales para hacer los pagos."
 
-#: src/Internal/Admin/Settings/PaymentsProviders.php:821
+#: src/Internal/Admin/Settings/PaymentsProviders.php:823
 msgid "Payment Providers"
 msgstr "Proveedores de pago"
 
-#: src/Internal/Admin/Settings/PaymentsProviders.php:810
+#: src/Internal/Admin/Settings/PaymentsProviders.php:812
 msgid "Offer flexible payment options to your shoppers."
 msgstr "Ofrece opciones de pago flexibles a tus compradores."
 
-#: src/Internal/Admin/Settings/PaymentsProviders.php:809
+#: src/Internal/Admin/Settings/PaymentsProviders.php:811
 msgid "Buy Now, Pay Later"
 msgstr "Compra ahora y paga después"
 
-#: src/Internal/Admin/Settings/PaymentsProviders.php:804
+#: src/Internal/Admin/Settings/PaymentsProviders.php:806
 msgid "Allow shoppers to fast-track the checkout process with express options like Apple Pay and Google Pay."
 msgstr "Permite a los compradores acelerar el proceso de compra con opciones exprés como Apple Pay y Google Pay."
 
-#: src/Internal/Admin/Settings/PaymentsProviders.php:693
-#: src/Internal/Admin/Settings/PaymentsProviders.php:760
+#: src/Internal/Admin/Settings/PaymentsProviders.php:695
+#: src/Internal/Admin/Settings/PaymentsProviders.php:762
 msgid "Invalid suggestion ID."
 msgstr "ID de sugerencia no válido."
 
@@ -4303,7 +4332,7 @@ msgstr "Excluir productos con cualquiera de los estados del conjunto de resultad
 msgid "Limit result set to products with any of the statuses."
 msgstr "Limitar el resultado a productos con cualquiera de los estados."
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:89
+#: includes/gateways/cod/class-wc-gateway-cod.php:90
 msgid "Let your shoppers pay upon delivery — by cash or other methods of payment."
 msgstr "Permite que tus compradores paguen en el momento de la entrega, en efectivo o con otros métodos de pago."
 
@@ -9360,7 +9389,7 @@ msgstr "Bolívar venezolano (2008-2018)"
 msgid "Limit result set to products with or without price."
 msgstr "Limita el conjunto de resultados a productos con o sin precio."
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:158
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:159
 msgid "These account details will be displayed within the order thank you page and confirmation email."
 msgstr "Estos datos de la cuenta se mostrarán en la página de agradecimiento del pedido y en el correo electrónico de confirmación."
 
@@ -14257,7 +14286,7 @@ msgstr "País/región de la tienda"
 msgid "Task is not a subclass of `Task`"
 msgstr "La tarea no es una subclase de «Tarea»."
 
-#: includes/class-woocommerce.php:1231
+#: includes/class-woocommerce.php:1228
 msgid "You have installed a development version of WooCommerce which requires files to be built and minified. From the plugin directory, run <code>pnpm install</code> and then <code>pnpm --filter='@woocommerce/plugin-woocommerce' build</code> to build and minify assets."
 msgstr "Has instalado una versión de desarrollo de WooCommerce que requiere que los archivos se creen y minimicen. Desde el directorio del plugin, ejecuta <code>pnpm install</code> y, luego, <code>pnpm -- run build --filter=woocommerce</code> para crear y minimizar recursos."
 
@@ -23173,7 +23202,7 @@ msgstr "Contenido adicional"
 
 #. translators: 1: URL of WordPress.org Repository 2: URL of the GitHub
 #. Repository release page
-#: includes/class-woocommerce.php:1234
+#: includes/class-woocommerce.php:1231
 msgid "Or you can download a pre-built version of the plugin from the <a href=\"%1$s\">WordPress.org repository</a> or by visiting <a href=\"%2$s\">the releases page in the GitHub repository</a>."
 msgstr "O puedes descargar una versión preconstruida del plugin desde el <a href=\"%1$s\">repositorio de WordPress.org</a> o visitando <a href=\"%2$s\">la página de versiones en el repositorio de GitHub</a>."
 
@@ -23393,7 +23422,7 @@ msgstr "Sugerencias del mercado"
 msgid "To opt out, leave this box unticked. Your store remains untracked, and no data will be collected. Read about what usage data is tracked at: %s."
 msgstr "Para rechazarlo, deja esta casilla sin marcar. No se hará seguimiento de tu tienda y no se recogerá ningún dato. Obtén más información sobre qué datos recogemos en: %s."
 
-#: includes/admin/class-wc-admin.php:371
+#: includes/admin/class-wc-admin.php:337
 msgid "five star"
 msgstr "cinco estrellas"
 
@@ -23996,15 +24025,6 @@ msgstr "Intentando reducir la memoria en uso...."
 msgid "Unable to save action."
 msgstr "No ha sido posible guardar la acción."
 
-#: packages/action-scheduler/classes/abstracts/ActionScheduler_Store.php:459
-msgid "Canceled"
-msgstr "Cancelada"
-
-#: packages/action-scheduler/classes/abstracts/ActionScheduler_Store.php:458
-#: src/Internal/ReceiptRendering/ReceiptRenderingEngine.php:392
-msgid "Failed"
-msgstr "Fallida"
-
 #: packages/action-scheduler/classes/abstracts/ActionScheduler_Store.php:457
 msgid "In-progress"
 msgstr "En curso"
@@ -24376,6 +24396,15 @@ msgid "The group \"%s\" does not exist."
 msgid_plural "The groups \"%s\" do not exist."
 msgstr[0] "El grupo «%s» no existe."
 msgstr[1] ""
+
+#: packages/action-scheduler/classes/abstracts/ActionScheduler_Store.php:459
+msgid "Canceled"
+msgstr "Cancelado"
+
+#: packages/action-scheduler/classes/abstracts/ActionScheduler_Store.php:458
+#: src/Internal/ReceiptRendering/ReceiptRenderingEngine.php:392
+msgid "Failed"
+msgstr "Falló"
 
 #: includes/rest-api/Controllers/Version3/class-wc-rest-reports-controller.php:67
 msgid "Attributes totals."
@@ -25028,21 +25057,21 @@ msgid "eCheck ending in %1$s"
 msgstr "eCheque finalizado en %1$s"
 
 #. Translators: %1$s zone name, %2$s shipping method instance name.
-#: includes/gateways/cod/class-wc-gateway-cod.php:276
+#: includes/gateways/cod/class-wc-gateway-cod.php:277
 msgid "%1$s &ndash; %2$s"
 msgstr "%1$s &ndash; %2$s"
 
 #. Translators: %1$s shipping method title, %2$s shipping method id.
-#: includes/gateways/cod/class-wc-gateway-cod.php:273
+#: includes/gateways/cod/class-wc-gateway-cod.php:274
 msgid "%1$s (#%2$s)"
 msgstr "%1$s (#%2$s)"
 
 #. Translators: %1$s zone name, %2$s shipping method instance name.
-#: includes/gateways/cod/class-wc-gateway-cod.php:276
+#: includes/gateways/cod/class-wc-gateway-cod.php:277
 msgid "Other locations"
 msgstr "Otras ubicaciones"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:157
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:158
 msgid "Account details:"
 msgstr "Detalles de la cuenta:"
 
@@ -25079,7 +25108,7 @@ msgid "PayPal Standard redirects customers to PayPal to enter their payment info
 msgstr "PayPal estándar redirige a los clientes a PayPal para introducir su información de pago."
 
 #. Translators: %1$s shipping method name.
-#: includes/gateways/cod/class-wc-gateway-cod.php:258
+#: includes/gateways/cod/class-wc-gateway-cod.php:259
 msgid "Any &quot;%1$s&quot; method"
 msgstr "Cualquier método &quot;%1$s&quot;"
 
@@ -25095,7 +25124,7 @@ msgstr "Ninguna página definida"
 msgid "Highlight required fields with an asterisk"
 msgstr "Destaca los campos obligatorios con un asterisco"
 
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:48
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:49
 msgid "Take payments in person via checks. This offline gateway can also be useful to test purchases."
 msgstr "Obtén pagos en persona mediante cheques. Esta pasarela de pago offline también puede ser útil para pruebas de compra."
 
@@ -25118,7 +25147,7 @@ msgstr "a, acuerdo, adelante, ademas, además, adrede, ahi, ahí, ahora, al, all
 msgid "Please see the <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\">PayPal Privacy Policy</a> for more details."
 msgstr "Por favor, revisa la <a href=\"https://www.paypal.com/es/webapps/mpp/ua/privacy-full\">política de privacidad de PayPal</a> para más detalles."
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:63
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:64
 msgid "Take payments in person via BACS. More commonly known as direct bank/wire transfer."
 msgstr "Recibe pagos en persona mediante BACS. También conocida como transferencia directa al banco o por cable."
 
@@ -25519,7 +25548,7 @@ msgstr "Páginas de WooCommerce"
 msgid "WooCommerce database version"
 msgstr "Versión de la base de datos de WordPress"
 
-#: includes/admin/settings/class-wc-settings-payment-gateways.php:76
+#: includes/admin/settings/class-wc-settings-payment-gateways.php:50
 msgctxt "Settings tab label"
 msgid "Payments"
 msgstr "Pagos"
@@ -25934,7 +25963,7 @@ msgstr "No tienes permisos para editar las claves API"
 msgid "No keys found."
 msgstr "No se han encontrado claves."
 
-#: includes/abstracts/abstract-wc-payment-gateway.php:218
+#: includes/abstracts/abstract-wc-payment-gateway.php:222
 msgid "Return to payments"
 msgstr "Volver a los pagos"
 
@@ -27467,7 +27496,7 @@ msgid "Update Available"
 msgstr "Actualización disponible"
 
 #. translators: 1: WooCommerce 2:: five stars
-#: includes/admin/class-wc-admin.php:369
+#: includes/admin/class-wc-admin.php:335
 msgid "If you like %1$s please leave us a %2$s rating. A huge thanks in advance!"
 msgstr "Si te gusta %1$s, por favor, déjanos una puntuación de %2$s. ¡Gracias anticipadas!"
 
@@ -29338,7 +29367,7 @@ msgstr "No se ha podido capturar el pago - ID de autorización: %1$s. Estado: %2
 msgid "Payment could not be captured: %s"
 msgstr "No se ha podido capturar el pago: %s"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:350
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:351
 msgid "Bank"
 msgstr "Banco"
 
@@ -31507,7 +31536,7 @@ msgstr "https://woocommerce.com"
 msgid "Force SSL (HTTPS) on the checkout pages (<a href=\"%s\" target=\"_blank\">an SSL Certificate is required</a>)."
 msgstr "Fuerza SSL (HTTPS) en las páginas de finalizar compra (<a href=\"%s\" target=\"_blank\">se requiere un certificado SSL</a>)."
 
-#: includes/admin/class-wc-admin.php:269
+#: includes/admin/class-wc-admin.php:235
 #: src/Internal/Admin/EmailPreview/EmailPreviewRestController.php:246
 msgid "Invalid email type."
 msgstr "Tipo de correo electrónico no válido."
@@ -32081,7 +32110,7 @@ msgstr "Página actual de la colección."
 msgid "Limit results to those matching a string."
 msgstr "Limita los resultados a lo indicado en la cadena."
 
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:158
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:159
 msgctxt "Check payment method"
 msgid "Awaiting check payment"
 msgstr "Pago de cheque en espera"
@@ -35108,8 +35137,8 @@ msgid "Sorry, you are not allowed to batch manipulate this resource."
 msgstr "Lo siento, pero no tienes permisos para manipular este recurso."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1593
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:47
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:83
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:48
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:84
 msgctxt "Check payment method"
 msgid "Check payments"
 msgstr "Pagos por cheque"
@@ -35159,7 +35188,7 @@ msgstr "ID de entrada no válido."
 msgid "Invalid ID."
 msgstr "ID no válido."
 
-#: includes/abstracts/abstract-wc-payment-gateway.php:654
+#: includes/abstracts/abstract-wc-payment-gateway.php:658
 msgid "Save to account"
 msgstr "Guardar en la cuenta"
 
@@ -37018,7 +37047,7 @@ msgstr "Debes estar conectado para para poder finalizar la compra."
 msgid "Please provide a valid account username."
 msgstr "Por favor, introduce un nombre de usuario válido."
 
-#: includes/abstracts/abstract-wc-payment-gateway.php:622
+#: includes/abstracts/abstract-wc-payment-gateway.php:626
 msgid "Use a new payment method"
 msgstr "Añadir un nuevo método de pago"
 
@@ -37139,25 +37168,25 @@ msgstr "Ocultar plantilla "
 msgid "Are you sure you want to delete this template file?"
 msgstr "¿Estás seguro que deseas eliminar este archivo de plantilla?"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:125
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:94
-#: includes/gateways/cod/class-wc-gateway-cod.php:120
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:126
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:95
+#: includes/gateways/cod/class-wc-gateway-cod.php:121
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 #: assets/client/admin/chunks/settings-payments-cheque.js:1
 #: assets/client/admin/chunks/settings-payments-cod.js:1
 msgid "Instructions"
 msgstr "Instrucciones"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:127
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:96
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:128
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:97
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 #: assets/client/admin/chunks/settings-payments-cheque.js:1
 #: assets/client/admin/chunks/settings-payments-cod.js:1
 msgid "Instructions that will be added to the thank you page and emails."
 msgstr "Instrucciones que se añadirán a la página de agradecimiento y correos electrónicos."
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:171
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:362
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:172
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:363
 #: assets/client/admin/chunks/5875.js:1
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "IBAN"
@@ -37165,9 +37194,9 @@ msgstr "IBAN"
 
 #: includes/admin/importers/mappings/generic.php:21
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:79
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:111
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:80
-#: includes/gateways/cod/class-wc-gateway-cod.php:106
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:112
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:81
+#: includes/gateways/cod/class-wc-gateway-cod.php:107
 #: includes/gateways/paypal/includes/settings-paypal.php:20
 #: includes/shipping/legacy-local-delivery/class-wc-shipping-legacy-local-delivery.php:138
 #: includes/shipping/legacy-local-pickup/class-wc-shipping-legacy-local-pickup.php:109
@@ -37191,38 +37220,38 @@ msgstr "IBAN"
 msgid "Title"
 msgstr "Título"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:172
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:173
 #: assets/client/admin/chunks/5875.js:1
 msgid "BIC / Swift"
 msgstr "BIC / Swift"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:197
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:198
 msgid "Remove selected account(s)"
 msgstr "Eliminar cuenta(s) seleccionada(s)"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:366
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:367
 msgid "BIC"
 msgstr "BIC"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:442
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:443
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "BSB"
 msgstr "BSB"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:452
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:453
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "IFSC"
 msgstr "IFSC"
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:115
+#: includes/gateways/cod/class-wc-gateway-cod.php:116
 msgid "Payment method description that the customer will see on your website."
 msgstr "Descripción del método de pago que el cliente verá en el sitio web."
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:122
+#: includes/gateways/cod/class-wc-gateway-cod.php:123
 msgid "Instructions that will be added to the thank you page."
 msgstr "Instrucciones que se añadirán a la página de agradecimiento."
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:318
+#: includes/gateways/cod/class-wc-gateway-cod.php:319
 msgid "Payment to be made upon delivery."
 msgstr "Pagos que se harán al entregar el producto."
 
@@ -37374,12 +37403,12 @@ msgstr "Costes de envío actualizados."
 msgid "Payment for order %s reversed"
 msgstr "Pago del pedido %s retirado"
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:140
+#: includes/gateways/cod/class-wc-gateway-cod.php:141
 #: assets/client/admin/chunks/settings-payments-cod.js:1
 msgid "Accept for virtual orders"
 msgstr "Aceptar para pedidos virtuales"
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:141
+#: includes/gateways/cod/class-wc-gateway-cod.php:142
 msgid "Accept COD if the order is virtual"
 msgstr "Aceptar contra reembolso si el pedido es virtual"
 
@@ -37430,7 +37459,7 @@ msgstr "Elige el formato en el que se enviarán los correos electrónicos."
 msgid "New order emails are sent to chosen recipient(s) when a new order is received."
 msgstr "Cuando se recibe un nuevo pedido se envían correos electrónicos de nuevo pedido a los destinatarios seleccionados."
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:127
+#: includes/gateways/cod/class-wc-gateway-cod.php:128
 #: assets/client/admin/chunks/settings-payments-cod.js:1
 msgid "Enable for shipping methods"
 msgstr "Activar para métodos de envío"
@@ -37463,9 +37492,9 @@ msgstr "Activar"
 #: includes/emails/class-wc-email-failed-order.php:181
 #: includes/emails/class-wc-email-new-order.php:209
 #: includes/emails/class-wc-email.php:992
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:105
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:74
-#: includes/gateways/cod/class-wc-gateway-cod.php:99
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:106
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:75
+#: includes/gateways/cod/class-wc-gateway-cod.php:100
 #: includes/gateways/paypal/includes/settings-paypal.php:14
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:21
 #: includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php:99
@@ -37482,7 +37511,7 @@ msgstr "Activar/Desactivar"
 msgid "Enable this email notification"
 msgstr "Activar este aviso por correo electrónico"
 
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:90
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:91
 msgid "Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode."
 msgstr "Por favor, envía un cheque a Nombre de la tienda, Calle de la tienda, Ciudad de la tienda, Provincia/País de la tienda, Código postal de la tienda."
 
@@ -37491,11 +37520,11 @@ msgstr "Por favor, envía un cheque a Nombre de la tienda, Calle de la tienda, C
 msgid "A valid free shipping coupon"
 msgstr "Un cupón válido de envío gratuito "
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:411
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:412
 msgid "Awaiting BACS payment"
 msgstr "Pendiente de pago por transferencia"
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:136
+#: includes/gateways/cod/class-wc-gateway-cod.php:137
 msgid "Select shipping methods"
 msgstr "Elige los métodos de envío"
 
@@ -37518,8 +37547,8 @@ msgstr "Qué cuota deseas cobrar para entregas locales, aunque hayas elegido gra
 msgid "Select options"
 msgstr "Seleccionar opciones"
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:116
-#: includes/gateways/cod/class-wc-gateway-cod.php:123
+#: includes/gateways/cod/class-wc-gateway-cod.php:117
+#: includes/gateways/cod/class-wc-gateway-cod.php:124
 msgid "Pay with cash upon delivery."
 msgstr "Paga en efectivo en el momento de la entrega."
 
@@ -37670,54 +37699,54 @@ msgstr "Pasarela desactivada"
 msgid "PayPal acceptance mark"
 msgstr "Marca de aceptación de PayPal"
 
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:76
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:77
 #: assets/client/admin/chunks/settings-payments-cheque.js:1
 msgid "Enable check payments"
 msgstr "Permitir pagos en cheque"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:477
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:478
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "Branch code"
 msgstr "Código de la sucursal"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:462
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:467
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:463
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:468
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "Bank code"
 msgstr "Código del banco"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:457
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:458
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "Branch sort"
 msgstr "Tipo de sucursal"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:447
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:448
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "Bank transit number"
 msgstr "Número de cuenta"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:384
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:385
 msgid "Our bank details"
 msgstr "Nuestros detalles bancarios"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:197
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:198
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "+ Add account"
 msgstr "+ Añadir cuenta"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:169
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:170
 #: assets/client/admin/chunks/5875.js:1
 msgid "Bank name"
 msgstr "Nombre del banco"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:168
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:354
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:169
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:355
 #: includes/gateways/class-wc-payment-gateway-echeck.php:53
 #: assets/client/admin/chunks/5875.js:1
 msgid "Account number"
 msgstr "Número de cuenta"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:167
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:168
 #: assets/client/admin/chunks/5875.js:1
 msgid "Account name"
 msgstr "Nombre de la cuenta"
@@ -37727,8 +37756,8 @@ msgstr "Nombre de la cuenta"
 msgid "Account details"
 msgstr "Detalles de la cuenta"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:62
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:114
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:63
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:115
 #: src/Admin/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:183
 #: src/Internal/Admin/EmailPreview/EmailPreview.php:346
 #: assets/client/admin/wp-admin-scripts/settings-embed.js:2
@@ -37736,7 +37765,7 @@ msgstr "Detalles de la cuenta"
 msgid "Direct bank transfer"
 msgstr "Transferencia bancaria directa"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:107
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:108
 msgid "Enable bank transfer"
 msgstr "Activar transferencia bancaria"
 
@@ -37802,13 +37831,13 @@ msgstr "Estas tarifas son opciones adicionales de envío con gastos adicionales 
 msgid "Order refunded emails are sent to customers when their orders are refunded."
 msgstr "Los correos electrónicos de los reembolsos ​se envían a los clientes cuando sus pedidos se reembolsan."
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:472
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:473
 #: includes/gateways/class-wc-payment-gateway-echeck.php:49
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "Routing number"
 msgstr "Número de ruta (ABA)"
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:132
+#: includes/gateways/cod/class-wc-gateway-cod.php:133
 msgid "If COD is only available for certain methods, set it up here. Leave blank to enable for all methods."
 msgstr "Si deseas que el contra reembolso solo esté disponible para ciertos métodos de envío, configúralo aquí. Déjalo en blanco para activarlo para todos los métodos."
 
@@ -37862,7 +37891,7 @@ msgstr "Esto es un aviso de pedido que se envía al cliente después del pago co
 msgid "Multipart"
 msgstr "Multiparte"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:121
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:122
 msgid "Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account."
 msgstr "Realiza tu pago directamente en nuestra cuenta bancaria. Por favor, usa el número del pedido como referencia de pago. Tu pedido no se procesará hasta que se haya recibido el importe en nuestra cuenta."
 
@@ -37878,9 +37907,9 @@ msgstr "Países seleccionados"
 msgid "What ZIP/post codes are available for local pickup?"
 msgstr "¿Qué códigos postales están disponibles para la recogida local?"
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:120
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:89
-#: includes/gateways/cod/class-wc-gateway-cod.php:108
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:121
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:90
+#: includes/gateways/cod/class-wc-gateway-cod.php:109
 msgid "Payment method description that the customer will see on your checkout."
 msgstr "Descripción del método de pago que el cliente verá en el pago."
 
@@ -37906,8 +37935,8 @@ msgstr "Los correos electrónicos de pedidos fallidos se envían a los destinata
 msgid "Enter a cost (excl. tax) or sum, e.g. <code>10.00 * [qty]</code>."
 msgstr "Introduce un coste (sin impuestos) o la suma, por ejemplo, <code>10.00 * [qty]</code> ."
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:151
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:328
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:152
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:329
 #: assets/client/admin/chunks/5875.js:1
 #: assets/client/admin/chunks/settings-payments-bacs.js:1
 msgid "Sort code"
@@ -37942,8 +37971,8 @@ msgstr "Borrar archivo de plantilla"
 msgid "Template file deleted from theme."
 msgstr "Archivo de plantilla borrado del tema."
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:113
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:82
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:114
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:83
 #: includes/gateways/paypal/includes/settings-paypal.php:22
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:29
 #: includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php:107
@@ -41883,11 +41912,11 @@ msgstr "Webhooks"
 msgid "Docs"
 msgstr "Documentación"
 
-#: includes/admin/class-wc-admin.php:371
+#: includes/admin/class-wc-admin.php:337
 msgid "Thanks :)"
 msgstr "Gracias :)"
 
-#: includes/admin/class-wc-admin.php:380
+#: includes/admin/class-wc-admin.php:346
 msgid "Thank you for selling with WooCommerce."
 msgstr "Gracias por vender con WooCommerce."
 
@@ -42507,8 +42536,8 @@ msgid "Empty Trash"
 msgstr "Vaciar la papelera"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1605
-#: includes/gateways/cod/class-wc-gateway-cod.php:88
-#: includes/gateways/cod/class-wc-gateway-cod.php:109
+#: includes/gateways/cod/class-wc-gateway-cod.php:89
+#: includes/gateways/cod/class-wc-gateway-cod.php:110
 #: src/Admin/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:194
 #: assets/client/admin/wp-admin-scripts/settings-embed.js:2
 #: assets/client/blocks/wc-payment-method-cod.js:1
@@ -42622,7 +42651,7 @@ msgstr "¡Hola! Sube un archivo CSV que contenga las tasas de impuestos para imp
 msgid "Product categories for your store can be managed here. To change the order of categories on the front-end you can drag and drop to sort them. To see more categories listed click the \"screen options\" link at the top-right of this page."
 msgstr "Las categorías de producto de tu tienda se pueden gestionar desde aquí. Para cambiar el orden de las categorías en la tienda puedes arrastrarlas y soltarlas aquí. Para ver aquí más categorías haz clic en el enlace de «opciones de pantalla» de la parte superior de esta página."
 
-#: includes/gateways/cod/class-wc-gateway-cod.php:100
+#: includes/gateways/cod/class-wc-gateway-cod.php:101
 msgid "Enable cash on delivery"
 msgstr "Activa el pago contra reembolso"
 
@@ -43856,9 +43885,9 @@ msgstr "Pedidos"
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:81
 #: includes/admin/settings/views/html-keys-edit.php:28
 #: includes/export/class-wc-product-csv-exporter.php:138
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:118
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:87
-#: includes/gateways/cod/class-wc-gateway-cod.php:113
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:119
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:88
+#: includes/gateways/cod/class-wc-gateway-cod.php:114
 #: includes/gateways/paypal/includes/settings-paypal.php:27
 #: includes/wc-template-functions.php:2076
 #: src/Admin/API/ShippingPartnerSuggestions.php:173
@@ -43926,7 +43955,7 @@ msgstr "Lectura/Escritura"
 #: includes/admin/class-wc-admin-api-keys-table-list.php:190
 #: includes/admin/settings/views/html-keys-edit.php:113
 #: src/Internal/Admin/Orders/MetaBoxes/OrderAttribution.php:50
-#: src/Internal/Admin/Settings/PaymentsProviders/PaymentGateway.php:133
+#: src/Internal/Admin/Settings/PaymentsProviders/PaymentGateway.php:130
 #: src/Internal/Fulfillments/FulfillmentsRenderer.php:156
 #: src/Internal/Traits/OrderAttributionMeta.php:325
 #: assets/client/admin/wp-admin-scripts/fulfillments.js:2
@@ -43944,7 +43973,7 @@ msgstr "Error en la acción. Por favor, recarga la página y vuelve a intentarlo
 #: woocommerce.php includes/admin/class-wc-admin-menus.php:97
 #: includes/admin/class-wc-admin-setup-wizard.php:353
 #: includes/admin/class-wc-admin-setup-wizard.php:446
-#: includes/admin/class-wc-admin.php:370
+#: includes/admin/class-wc-admin.php:336
 #: includes/admin/helper/views/html-oauth-start.php:21
 #: includes/class-wc-order.php:2030 includes/class-wc-order.php:2031
 #: includes/class-wc-privacy.php:54
