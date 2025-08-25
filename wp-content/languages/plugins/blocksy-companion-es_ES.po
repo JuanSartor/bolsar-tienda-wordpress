@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Blocksy Companion - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-12 21:24:15+0000\n"
+"PO-Revision-Date: 2025-08-21 20:32:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2119,8 +2119,8 @@ msgid "Fax"
 msgstr "Fax"
 
 #: framework/features/blocks/contact-info/options.php:272
-msgid "Opening hours"
-msgstr "Horario de apertura"
+msgid "Opening hours:"
+msgstr "Horario de apertura:"
 
 #: framework/features/blocks/contact-info/options.php:265
 msgid "Work Hours"
@@ -2549,7 +2549,7 @@ msgstr "Campo de nombre"
 #: framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/options.php:50
 #: framework/extensions/newsletter-subscribe/customizer.php:61
 #: framework/extensions/newsletter-subscribe/dashboard-static/bundle/main.js:14
-#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:243
+#: framework/extensions/newsletter-subscribe/dashboard-static/js/EditCredentials.js:244
 msgid "List ID"
 msgstr "ID de lista"
 

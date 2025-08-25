@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Blocksy package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-07-04 22:25:21+0000\n"
+"PO-Revision-Date: 2025-08-21 20:31:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,6 +22,14 @@ msgstr "Blocksy es un tema WordPress rápido y moderno, con compatibilidad avanz
 #, gp-priority: high
 msgid "Blocksy"
 msgstr "Blocksy"
+
+#: inc/panel-builder/header/middle-row/options.php:620
+msgid "Row Border Radius"
+msgstr "Radio del borde de la fila"
+
+#: inc/panel-builder/header/middle-row/options.php:590
+msgid "Row Padding"
+msgstr "Relleno de fila"
 
 #: inc/options/woocommerce/single-product-layers.php:271
 msgid "Button Height"
@@ -105,20 +113,20 @@ msgstr "Radio del borde del panel"
 msgid "Panel Offset"
 msgstr "Desplazamiento del panel"
 
-#: inc/classes/woo-variation-images-import-export.php:41
-#: inc/classes/woo-variation-images-import-export.php:47
+#: inc/classes/woo-variation-images-import-export.php:44
+#: inc/classes/woo-variation-images-import-export.php:50
 msgid "Blocksy Variation Images"
 msgstr "Imágenes de variación de Blocksy"
 
-#: inc/classes/woo-import-export.php:175
+#: inc/classes/woo-import-export.php:177
 msgid "Unable to use image \"%s\"."
 msgstr "No ha sido posible utilizar la imagen «%s»."
 
-#: inc/classes/woo-import-export.php:164
+#: inc/classes/woo-import-export.php:166
 msgid "Not able to attach \"%s\"."
 msgstr "No se ha podido adjuntar «%s»."
 
-#: inc/classes/woo-import-export.php:76 inc/classes/woo-import-export.php:82
+#: inc/classes/woo-import-export.php:78 inc/classes/woo-import-export.php:84
 msgid "Blocksy Custom Data"
 msgstr "Datos personalizados de Blocksy"
 
@@ -189,11 +197,11 @@ msgstr "Razones para comprar"
 msgid "Tooltip"
 msgstr "Información emergente"
 
-#: inc/manager.php:257
+#: inc/manager.php:247
 msgid "Failed to Copy"
 msgstr "Error al copiar"
 
-#: inc/manager.php:256
+#: inc/manager.php:246
 msgid "Copied!"
 msgstr "¡Copiado!"
 
@@ -995,13 +1003,13 @@ msgstr "Lista inferior"
 msgid "Comment Form Position"
 msgstr "Posición del formulario de comentarios"
 
-#: inc/manager.php:243 inc/manager.php:249
+#: inc/manager.php:233 inc/manager.php:239
 msgid "You got %s result. Please press Tab to select it."
 msgid_plural "You got %s results. Please press Tab to select one."
 msgstr[0] "Obtuviste %s resultado. Por favor, pulsa en la pestaña para seleccionarlo."
 msgstr[1] "Obtuviste %s resultados. Por favor, pulsa en la pestaña para seleccionar uno."
 
-#: inc/manager.php:240 inc/manager.php:242 searchform.php:351
+#: inc/manager.php:230 inc/manager.php:232 searchform.php:351
 msgid "No results"
 msgstr "Sin resultados"
 
@@ -1180,12 +1188,12 @@ msgstr "Radio del borde del elemento"
 msgid "Custom Quantity Input"
 msgstr "Entrada de cantidad personalizada"
 
-#: inc/manager.php:260
+#: inc/manager.php:250
 msgid "Collapse dropdown menu"
 msgstr "Cerrar el menú desplegable"
 
 #: inc/components/menus.php:80 inc/components/menus.php:92
-#: inc/components/menus.php:241 inc/manager.php:259
+#: inc/components/menus.php:241 inc/manager.php:249
 msgid "Expand dropdown menu"
 msgstr "Abrir el menú desplegable"
 
@@ -1787,14 +1795,14 @@ msgstr "Fuente del total del carrito"
 
 #: inc/panel-builder/header/search/options.php:183
 #: inc/panel-builder/header/socials/options.php:217
-#: inc/panel-builder/header/trigger/options.php:193
+#: inc/panel-builder/header/trigger/options.php:217
 msgid "Label Font Color"
 msgstr "Color de la fuente de la etiqueta"
 
 #: inc/panel-builder/footer/socials/options.php:246
 #: inc/panel-builder/header/search/options.php:172
 #: inc/panel-builder/header/socials/options.php:206
-#: inc/panel-builder/header/trigger/options.php:182
+#: inc/panel-builder/header/trigger/options.php:206
 msgid "Label Font"
 msgstr "Fuente de la etiqueta"
 
@@ -1965,7 +1973,7 @@ msgstr "Efecto del indicador"
 #: inc/panel-builder/header/socials/options.php:167
 #: inc/panel-builder/header/text/options.php:111
 #: inc/panel-builder/header/text/options.php:442
-#: inc/panel-builder/header/trigger/options.php:638
+#: inc/panel-builder/header/trigger/options.php:168
 msgid "Element Visibility"
 msgstr "Visibilidad del elemento"
 
@@ -2274,9 +2282,9 @@ msgstr "Logotipo del estado transparente"
 #: inc/panel-builder/header/socials/options.php:510
 #: inc/panel-builder/header/text/options.php:185
 #: inc/panel-builder/header/text/options.php:338
-#: inc/panel-builder/header/trigger/options.php:212
-#: inc/panel-builder/header/trigger/options.php:338
-#: inc/panel-builder/header/trigger/options.php:471
+#: inc/panel-builder/header/trigger/options.php:236
+#: inc/panel-builder/header/trigger/options.php:362
+#: inc/panel-builder/header/trigger/options.php:495
 msgid "Sticky State"
 msgstr "Estado fijo"
 
@@ -2305,9 +2313,9 @@ msgstr "Estado fijo"
 #: inc/panel-builder/header/socials/options.php:499
 #: inc/panel-builder/header/text/options.php:176
 #: inc/panel-builder/header/text/options.php:329
-#: inc/panel-builder/header/trigger/options.php:203
-#: inc/panel-builder/header/trigger/options.php:329
-#: inc/panel-builder/header/trigger/options.php:461
+#: inc/panel-builder/header/trigger/options.php:227
+#: inc/panel-builder/header/trigger/options.php:353
+#: inc/panel-builder/header/trigger/options.php:485
 msgid "Transparent State"
 msgstr "Estado transparente"
 
@@ -2336,9 +2344,9 @@ msgstr "Estado transparente"
 #: inc/panel-builder/header/socials/options.php:490
 #: inc/panel-builder/header/text/options.php:171
 #: inc/panel-builder/header/text/options.php:324
-#: inc/panel-builder/header/trigger/options.php:198
-#: inc/panel-builder/header/trigger/options.php:324
-#: inc/panel-builder/header/trigger/options.php:455
+#: inc/panel-builder/header/trigger/options.php:222
+#: inc/panel-builder/header/trigger/options.php:348
+#: inc/panel-builder/header/trigger/options.php:479
 msgid "Default State"
 msgstr "Estado por defecto"
 
@@ -2724,9 +2732,9 @@ msgstr "Margen del icono"
 msgid "WooCommerce Sidebar"
 msgstr "Barra lateral de WooCommerce"
 
-#: inc/panel-builder/header/trigger/options.php:482
-#: inc/panel-builder/header/trigger/options.php:522
-#: inc/panel-builder/header/trigger/options.php:560
+#: inc/panel-builder/header/trigger/options.php:506
+#: inc/panel-builder/header/trigger/options.php:546
+#: inc/panel-builder/header/trigger/options.php:584
 msgid "Trigger Border Color"
 msgstr "Color del borde del activador"
 
@@ -2842,7 +2850,7 @@ msgstr "Barra lateral principal"
 #: inc/components/single/comments.php:288
 #: static/bundle/customizer-controls.js:13 static/bundle/options.js:13
 #: static/js/customizer/sync/builder.js:111
-#: static/js/options/options/ct-image-uploader.js:385
+#: static/js/options/options/ct-image-uploader.js:397
 msgid "Edit"
 msgstr "Editar"
 
@@ -3297,7 +3305,7 @@ msgstr "1 reseña"
 msgid "1 Comment"
 msgstr "1 comentario"
 
-#: inc/manager.php:238
+#: inc/manager.php:228
 msgid "More"
 msgstr "Más"
 
@@ -3518,7 +3526,7 @@ msgstr "Menú 1"
 #: inc/panel-builder/header/offcanvas-logo/options.php:76
 #: inc/panel-builder/header/socials/options.php:642
 #: inc/panel-builder/header/text/options.php:419
-#: inc/panel-builder/header/trigger/options.php:621
+#: inc/panel-builder/header/trigger/options.php:645
 msgid "Margin"
 msgstr "Margen"
 
@@ -4050,7 +4058,7 @@ msgstr "Núcleo"
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
-#: inc/manager.php:237
+#: inc/manager.php:227
 msgid "Show more"
 msgstr "Mostrar más"
 
@@ -4139,7 +4147,7 @@ msgstr "Pie de página"
 msgid "Layout"
 msgstr "Diseño"
 
-#: inc/manager.php:239
+#: inc/manager.php:229
 msgid "Search results"
 msgstr "Resultados de búsqueda"
 
@@ -4567,10 +4575,9 @@ msgstr "Tipo"
 #: inc/options/woocommerce/single-product-gallery.php:373
 #: inc/panel-builder/header/button/options.php:834
 #: inc/panel-builder/header/cart/options.php:1126
-#: inc/panel-builder/header/middle-row/options.php:590
 #: inc/panel-builder/header/offcanvas/options.php:428
 #: inc/panel-builder/header/search/options.php:861
-#: inc/panel-builder/header/trigger/options.php:606
+#: inc/panel-builder/header/trigger/options.php:630
 msgid "Border Radius"
 msgstr "Radio del borde"
 
@@ -4664,10 +4671,10 @@ msgstr "Buscar"
 #: inc/panel-builder/header/search/options.php:368
 #: inc/panel-builder/header/search/options.php:398
 #: inc/panel-builder/header/search/options.php:746
-#: inc/panel-builder/header/trigger/options.php:319
-#: inc/panel-builder/header/trigger/options.php:348
-#: inc/panel-builder/header/trigger/options.php:379
-#: inc/panel-builder/header/trigger/options.php:408
+#: inc/panel-builder/header/trigger/options.php:343
+#: inc/panel-builder/header/trigger/options.php:372
+#: inc/panel-builder/header/trigger/options.php:403
+#: inc/panel-builder/header/trigger/options.php:432
 msgid "Icon Color"
 msgstr "Color de icono"
 
@@ -4935,7 +4942,7 @@ msgstr "Visibilidad"
 #: inc/panel-builder/header/text/options.php:453
 #: inc/panel-builder/header/trigger/options.php:63
 #: inc/panel-builder/header/trigger/options.php:119
-#: inc/panel-builder/header/trigger/options.php:650
+#: inc/panel-builder/header/trigger/options.php:180
 msgid "Mobile"
 msgstr "Móvil"
 
@@ -4982,7 +4989,7 @@ msgstr "Móvil"
 #: inc/panel-builder/header/text/options.php:452
 #: inc/panel-builder/header/trigger/options.php:62
 #: inc/panel-builder/header/trigger/options.php:118
-#: inc/panel-builder/header/trigger/options.php:649
+#: inc/panel-builder/header/trigger/options.php:179
 msgid "Tablet"
 msgstr "Tableta"
 
@@ -5209,10 +5216,10 @@ msgstr "Tamaño del borde"
 #: inc/panel-builder/header/menu/options.php:518
 #: inc/panel-builder/header/offcanvas/options.php:387
 #: inc/panel-builder/header/search/options.php:822
-#: inc/panel-builder/header/trigger/options.php:446
-#: inc/panel-builder/header/trigger/options.php:488
-#: inc/panel-builder/header/trigger/options.php:528
-#: inc/panel-builder/header/trigger/options.php:566
+#: inc/panel-builder/header/trigger/options.php:470
+#: inc/panel-builder/header/trigger/options.php:512
+#: inc/panel-builder/header/trigger/options.php:552
+#: inc/panel-builder/header/trigger/options.php:590
 #: static/bundle/customizer-controls.js:13 static/bundle/options.js:13
 #: static/js/options/options/background/BackgroundModal.js:144
 msgid "Background Color"
@@ -5241,10 +5248,10 @@ msgstr "Clásico"
 #: inc/panel-builder/header/cart/options.php:1035
 #: inc/panel-builder/header/offcanvas/options.php:346
 #: inc/panel-builder/header/search/options.php:783
-#: inc/panel-builder/header/trigger/options.php:442
-#: inc/panel-builder/header/trigger/options.php:484
-#: inc/panel-builder/header/trigger/options.php:524
-#: inc/panel-builder/header/trigger/options.php:562
+#: inc/panel-builder/header/trigger/options.php:466
+#: inc/panel-builder/header/trigger/options.php:508
+#: inc/panel-builder/header/trigger/options.php:548
+#: inc/panel-builder/header/trigger/options.php:586
 msgid "Border Color"
 msgstr "Color del borde"
 
@@ -5383,15 +5390,15 @@ msgstr "Color del borde"
 #: inc/panel-builder/header/socials/options.php:554
 #: inc/panel-builder/header/socials/options.php:593
 #: inc/panel-builder/header/socials/options.php:632
-#: inc/panel-builder/header/trigger/options.php:244
-#: inc/panel-builder/header/trigger/options.php:274
-#: inc/panel-builder/header/trigger/options.php:303
-#: inc/panel-builder/header/trigger/options.php:371
-#: inc/panel-builder/header/trigger/options.php:401
-#: inc/panel-builder/header/trigger/options.php:430
-#: inc/panel-builder/header/trigger/options.php:514
-#: inc/panel-builder/header/trigger/options.php:553
-#: inc/panel-builder/header/trigger/options.php:591
+#: inc/panel-builder/header/trigger/options.php:268
+#: inc/panel-builder/header/trigger/options.php:298
+#: inc/panel-builder/header/trigger/options.php:327
+#: inc/panel-builder/header/trigger/options.php:395
+#: inc/panel-builder/header/trigger/options.php:425
+#: inc/panel-builder/header/trigger/options.php:454
+#: inc/panel-builder/header/trigger/options.php:538
+#: inc/panel-builder/header/trigger/options.php:577
+#: inc/panel-builder/header/trigger/options.php:615
 #: static/bundle/customizer-controls.js:13 static/bundle/options.js:13
 #: static/js/options/options/ct-border.js:115
 msgid "Hover"
@@ -5442,9 +5449,9 @@ msgstr "Al pasar el cursor"
 #: inc/panel-builder/header/text/options.php:195
 #: inc/panel-builder/header/text/options.php:237
 #: inc/panel-builder/header/text/options.php:276
-#: inc/panel-builder/header/trigger/options.php:221
-#: inc/panel-builder/header/trigger/options.php:252
-#: inc/panel-builder/header/trigger/options.php:281
+#: inc/panel-builder/header/trigger/options.php:245
+#: inc/panel-builder/header/trigger/options.php:276
+#: inc/panel-builder/header/trigger/options.php:305
 msgid "Font Color"
 msgstr "Color de fuente"
 
@@ -5505,7 +5512,7 @@ msgstr "Color de fuente"
 #: inc/panel-builder/header/search/options.php:538
 #: inc/panel-builder/header/socials/options.php:189
 #: inc/panel-builder/header/text/options.php:150
-#: inc/panel-builder/header/trigger/options.php:166
+#: inc/panel-builder/header/trigger/options.php:190
 msgid "Design"
 msgstr "Diseño"
 
@@ -5784,15 +5791,15 @@ msgstr "General"
 #: inc/panel-builder/header/socials/options.php:549
 #: inc/panel-builder/header/socials/options.php:588
 #: inc/panel-builder/header/socials/options.php:627
-#: inc/panel-builder/header/trigger/options.php:238
-#: inc/panel-builder/header/trigger/options.php:269
-#: inc/panel-builder/header/trigger/options.php:298
-#: inc/panel-builder/header/trigger/options.php:365
-#: inc/panel-builder/header/trigger/options.php:396
-#: inc/panel-builder/header/trigger/options.php:425
-#: inc/panel-builder/header/trigger/options.php:508
-#: inc/panel-builder/header/trigger/options.php:548
-#: inc/panel-builder/header/trigger/options.php:586
+#: inc/panel-builder/header/trigger/options.php:262
+#: inc/panel-builder/header/trigger/options.php:293
+#: inc/panel-builder/header/trigger/options.php:322
+#: inc/panel-builder/header/trigger/options.php:389
+#: inc/panel-builder/header/trigger/options.php:420
+#: inc/panel-builder/header/trigger/options.php:449
+#: inc/panel-builder/header/trigger/options.php:532
+#: inc/panel-builder/header/trigger/options.php:572
+#: inc/panel-builder/header/trigger/options.php:610
 #: static/bundle/customizer-controls.js:13 static/bundle/options.js:13
 #: static/js/options/options/background/BackgroundModal.js:154
 #: static/js/options/options/background/ImagePicker.js:190
